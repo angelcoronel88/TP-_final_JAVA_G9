@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/header-fotter.css">
+    <link rel="stylesheet" href="../css/api.css">
+    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/872d0d3461.js" crossorigin="anonymous"></script>
+    <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Imágenes de API</title>
+</head>
+<body >
+
+
+    <main>
+        <h1 class="movieTitle">Top 20 películas 2024</h1>
+        <div class="image-container" id="imageContainer"></div>
+
+        <script>
+            const container = document.getElementById('imageContainer');
+    
+            const options = {
+                method: 'GET',
+                headers: {
+                    'X-RapidAPI-Host':'list-movies.p.rapidapi.com',
+                    'X-RapidAPI-Key': '3b7e1d1a3bmshc179cef2046180ep197cd1jsn9909af6594bb',
+                }
+            };
+    
+            fetch('https://list-movies.p.rapidapi.com/list_movies.json', options)
+            .then(response => response.json())
+            //.then(response => console.log("pelis",response))
+            .then(data =>{
+                data.data.movies.forEach(movie => {
+                    const div = document.createElement('div');
+                    const img = document.createElement('img');
+                    const title = document.createElement('h2');
+                    img.src = movie.medium_cover_image;
+                    img.alt = movie.title;
+                    title.textContent = movie.title;
+                    div.appendChild(img);
+                    container.appendChild(div);
+                });
+            })
+            .catch(error => console.error('Error:', error));
+    
+                </script>
+    </main>
+
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

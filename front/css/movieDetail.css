@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "nunito", sans-serif;
+}
+
+.detailContainer{
+    background-image: linear-gradient(to right top, #6d6969a7, #6d6969a7), url(../assets/img_login_Mdetail/mario-bg.jpg);
+    filter:drop-shadow(0px 0px 10px black);
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.imageDetail{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 20px 0px;
+}
+
+.imageDetail img{
+    border-radius: 10px;
+}
+
+.detail{
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.detail h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.detail p{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.directors{
+    display:flex;
+    gap: 40px;
+}
+
+.directors h3{
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+.trailer{
+    min-height: 75vh;
+    background-color: #6d6969a7;
+}
+
+.trailer h3{   /**/
+    font-size: 35px;
+    font-weight: bold;
+    padding: 20px;
+    color:white;
+    text-align: center;
+}
+
+.trailer p{   /**/
+    color:white;
+    font-size: 30px;
+    text-align: center;
+}
+
+iframe{
+    width: 100%;
+    height: 500px;
+    padding:30px 0;
+}
+
+.trailerLinks{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.trailerLinks{
+    list-style: none;
+}
+
+
+@media screen and (min-width: 1200px){
+    main{
+        margin-top: 0px;
+    }
+    .detail h1{
+        font-size: 30px;
+    }
+    .detail p{
+        font-size: 20px;
+    }
+    .detailContainer{
+        flex-direction: row;
+        align-items: center;
+        padding:20px;
+    }
+    
+    .trailer p{
+        font-size: 20px;
+        text-align: left;
+    }
+    .trailer{
+        display: flex;
+        justify-content: space-around;
+    }
+    .trailerLinks{
+        display: flex;
+        gap: 20px;
+        padding-top: 100px;
+    }
+    iframe{
+        width: 600px;
+        height: 300px;
+        border-radius: 10px;
+    }
+
+}

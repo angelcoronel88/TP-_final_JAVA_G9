@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./asset/img/reproductor-de-video.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/header-fotter.css">
+    <title>Cinéfilos</title>
+</head>
+
+<body class="d-flex flex-column h-100">
+    <header class="headerContainer">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+
+                <div class="headerLogo">
+                    <a class="text-decoration-none logo" href="./index.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><path fill="white" d="M12 3a9 9 0 0 1 9 9c0 2.453-.98 4.676-2.573 6.3A8.967 8.967 0 0 1 12 21a9 9 0 1 1 0-18m6.326 18c.55-.387 1.061-.822 1.53-1.3A10.967 10.967 0 0 0 23 12c0-6.075-4.925-11-11-11S1 5.925 1 12s4.925 11 11 11h12v-2zM12 6a1 1 0 1 0 0 2a1 1 0 0 0 0-2M9 7a3 3 0 1 1 6 0a3 3 0 0 1-6 0m-2 4a1 1 0 1 0 0 2a1 1 0 0 0 0-2m-3 1a3 3 0 1 1 6 0a3 3 0 0 1-6 0m13-1a1 1 0 1 0 0 2a1 1 0 0 0 0-2m-3 1a3 3 0 1 1 6 0a3 3 0 0 1-6 0m-2 4a1 1 0 1 0 0 2a1 1 0 0 0 0-2m-3 1a3 3 0 1 1 6 0a3 3 0 0 1-6 0"/></svg>
+                        <span>Cinéfilos</span>
+                    </a>
+                </div>
+
+                <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="./index.html">Peliculas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="#Seccion-series">Series</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="pages/api.html">Api</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="./pages/registro.html">Registrarse</a>
+                    </li>
+                    <li class="nav-item loginButton">
+                        <a class="nav-link text-light" href="./pages/iniciar_sesion.html">Iniciar Sesión</a>
+                    </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Seccion Bienvenida -->
+        <section class="principal">
+            <h1>Películas y series ilimitadas <br>
+                en un solo lugar</h1>
+            <h2>Disfruta donde quieras.<br>
+                Cancela en cualquier momento.</h2>
+            <a class="botonRegistro" href="pages/register.html">Regístrate</a>
+
+        </section>
+        <!-- Seccion Buscar -->
+        <section class="busqueda">
+            <h3>¿Qué estas buscando para ver?</h3>
+
+            <form action="">
+                <input class="buscador" type="text" placeholder="Buscar...">
+                <input class="botonBuscar" type="submit" value="Buscar">
+            </form>
+
+        </section>
+
+        <hr class="linea">
+
+        <!-- LAS MAS BUSCADAS -->
+        <section class="container-fluid">
+            <div class="row">
+                <div class="col-12 py-3">
+                    <h4 id="Seccion-peliculas">Las más buscadas</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-2 pb-4">
+                    <div class="bloque-proyecto">
+                        <a href="pages/movieDetail.html">
+                            <img class="imagenTendencia" src="assets/img/peli_1.jpg" alt="">
+                            <div class="efecto-imagen">
+                                <div class="texto-imagen">Sentencia De Muerte 2024</div>
+                            </div>
+                        </a> 
+                    </div>
+                </div>
+                <div class="col-12 col-sm-2 pb-4">
+                    <div class="bloque-proyecto">
+                        <a href="pages/movieDetail.html">
+                            <img class="imagenTendencia" src="assets/img/peli_2.jpg" alt="">
+                            <div class="efecto-imagen">
+                                <div class="texto-imagen">Badland Hunter 2024</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-2 pb-4">
+                    <div class="bloque-proyecto">
+                        <a href="pages/movieDetail.html">
+                            <img class="imagenTendencia" src="assets/img/peli_3.jpg" alt="">
+                            <div class="efecto-imagen">
+                                <div class="texto-imagen">The Marvels 2023</div>
+                            </div>
+                        </a>    
+                    </div>
+                </div>
+                <div class="col-12 col-sm-2 pb-4">
+                    <div class="bloque-proyecto">
+                        <a href="pages/movieDetail.html">
+                            <img class="imagenTendencia" src="assets/img/peli_4.jpg" alt="">
+                            <div class="efecto-imagen">
+                                <div class="texto-imagen">Wonka 2023</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-2 pb-4">
+                    <div class="bloque-proyecto">
+                        <a href="pages/movieDetail.html">
+                            <img class="imagenTendencia" src="assets/img/peli_5.jpg" alt="">
+                            <div class="efecto-imagen">
+                                <div class="texto-imagen">Aquaman 2 2023</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-2 pb-4">
+                    <div class="bloque-proyecto">
+                        <a href="pages/movieDetail.html">
+                            <img class="imagenTendencia" src="assets/img/peli_6.jpg" alt="">
+                            <div class="efecto-imagen">
+                                <div class="texto-imagen">¡Patos! 2023</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-2 pb-4">
+                    <div class="bloque-proyecto">
+                        <a href="pages/movieDetail.html">
+                            <img class="imagenTendencia" src="assets/img/peli_7.jpg" alt="">
+                            <div class="efecto-imagen">
+                                <div class="texto-imagen">60 minutos 2024</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-2 pb-4">
+                    <div class="bloque-proyecto">
+                        <a href="pages/movieDetail.html">
+                            <img class="imagenTendencia" src="assets/img/peli_8.jpg" alt="">
+                            <div class="efecto-imagen">
+                                <div class="texto-imagen">Wish: El poder de los deseos 2023</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-2 pb-4">
+                    <div class="bloque-proyecto">
+                        <a href="pages/movieDetail.html">
+                            <img class="imagenTendencia" src="assets/img/peli_9.jpg" alt="">
+                            <div class="efecto-imagen">
+                                <div class="texto-imagen">El Angel Enmascarado 2016</div>
+                            </div>
+                        </a>    
+                    </div>
+                </div>
+                <div class="col-12 col-sm-2 pb-4">
+                    <div class="bloque-proyecto">
+                        <a href="pages/movieDetail.html">
+                            <img class="imagenTendencia" src="assets/img/peli_10.jpg" alt="">
+                            <div class="efecto-imagen">
+                                <div class="texto-imagen">Due Justice 2023</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-2 pb-4">
+                    <div class="bloque-proyecto">
+                        <a href="pages/movieDetail.html">
+                            <img class="imagenTendencia" src="assets/img/peli_11.jpg" alt="">
+                            <div class="efecto-imagen">
+                                <div class="texto-imagen">Orion Y la Oscuridad 2024</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-2 pb-4">
+                    <div class="bloque-proyecto">
+                        <a href="pages/movieDetail.html">
+                            <img class="imagenTendencia" src="assets/img/peli_12.jpg" alt="">
+                            <div class="efecto-imagen">
+                                <div class="texto-imagen">Genghis Khan 2018</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-2 pb-4">
+                    <div class="bloque-proyecto">
+                        <a href="pages/movieDetail.html">
+                            <img class="imagenTendencia" src="assets/img/20.jpg" alt="">
+                            <div class="efecto-imagen">
+                                <div class="texto-imagen">Joker 2019</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-2 pb-4">
+                    <div class="bloque-proyecto">
+                        <a href="pages/movieDetail.html">
+                            <img class="imagenTendencia" src="assets/img/26.jpg" alt="">
+                            <div class="efecto-imagen">
+                                <div class="texto-imagen">Las Ventajas De Ser Invisible 2012</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-2 pb-4">
+                    <div class="bloque-proyecto">
+                        <a href="pages/movieDetail.html">
+                            <img class="imagenTendencia" src="assets/img/27.jpg" alt="">
+                            <div class="efecto-imagen">
+                                <div class="texto-imagen">El Resplandor 1980</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-2 pb-4">
+                    <div class="bloque-proyecto">
+                        <a href="pages/movieDetail.html">
+                            <img class="imagenTendencia" src="assets/img/23.jpg" alt="">
+                            <div class="efecto-imagen">
+                                <div class="texto-imagen">Avengers: Infinity War 2018</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-2 pb-4">
+                    <div class="bloque-proyecto">
+                        <a href="pages/movieDetail.html">
+                            <img class="imagenTendencia" src="assets/img/24.jpg" alt="">
+                            <div class="efecto-imagen">
+                                <div class="texto-imagen">El Joven Manos De Tijera 1990</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-2 pb-4">
+                    <div class="bloque-proyecto">
+                        <a href="pages/movieDetail.html">
+                            <img class="imagenTendencia" src="assets/img/25.jpg" alt="">
+                            <div class="efecto-imagen">
+                                <div class="texto-imagen">The Great Gatsby 2013</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="botones-container">
+                <button class="boton">Anterior</button>
+                <button class="boton">Siguiente</button>
+            </div>
+
+        </section>
+
+        <hr class="linea">
+
+        <!-- CLASICOS DEL CINE -->
+
+        <section class="clasicos">
+
+            <h5 class="titulo-clasicos">Clásicos del cine</h5>
+
+
+            <div class="scroll-container">
+                <div class="imagenes">
+                    <a href="pages/movieDetail.html"><img src="assets/img/clasicos/tr.jpg" alt="Imagen 1" loading="lazy"></a>
+                    <a href="pages/movieDetail.html"><img src="assets/img/clasicos/t.jpg" alt="Imagen 2" loading="lazy"></a>
+                    <a href="pages/movieDetail.html"><img src="assets/img/clasicos/m.jpg" alt="Imagen 3" loading="lazy"></a>
+                    <a href="pages/movieDetail.html"><img src="assets/img/clasicos/lv.jpg" alt="Imagen 1" loading="lazy"></a>
+                    <a href="pages/movieDetail.html"><img src="assets/img/clasicos/h.jpg" alt="Imagen 2" loading="lazy"></a>
+                    <a href="pages/movieDetail.html"><img src="assets/img/clasicos/f.jpg" alt="Imagen 3" loading="lazy"></a>
+                    <a href="pages/movieDetail.html"><img src="assets/img/clasicos/c.jpg" alt="Imagen 1" loading="lazy"></a>
+                    <a href="pages/movieDetail.html"><img src="assets/img/clasicos/ex.jpg" alt="Imagen 2" loading="lazy"></a>
+                    <a href="pages/movieDetail.html"><img src="assets/img/clasicos/et.jpg" alt="Imagen 3" loading="lazy"></a>
+                    <a href="pages/movieDetail.html"><img src="assets/img/clasicos/br.jpg" alt="Imagen 1" loading="lazy"></a>
+                    <a href="pages/movieDetail.html"><img src="assets/img/clasicos/bf.jpg" alt="Imagen 2" loading="lazy"></a>
+                    <a href="pages/movieDetail.html"><img src="assets/img/clasicos/aclamada_2.jpg" alt="Imagen 1" loading="lazy"></a>
+                    <a href="pages/movieDetail.html"><img src="assets/img/clasicos/aclamada_3.jpg" alt="Imagen 3" loading="lazy"></a>
+                    <a href="pages/movieDetail.html"><img src="assets/img/clasicos/3.jpg" alt="Imagen 3" loading="lazy"></a>
+                    <a href="pages/movieDetail.html"><img src="assets/img/clasicos/al.jpg" alt="Imagen 1"></a>
+                    <a href="pages/movieDetail.html"><img src="assets/img/clasicos/aclamada_9.jpg" alt="Imagen 2" loading="lazy"></a>
+                    <a href="pages/movieDetail.html"><img src="assets/img/clasicos/aclamada_11.jpg" alt="Imagen 2" loading="lazy"></a>
+                    <a href="pages/movieDetail.html"><img src="assets/img/clasicos/27.jpg" alt="Imagen 3" loading="lazy"></a>
+                    <a href="pages/movieDetail.html"><img src="assets/img/clasicos/TD.jpg" alt="Imagen 3" loading="lazy"></a>
+                    <a href="pages/movieDetail.html"><img src="assets/img/clasicos/1366_2000.jpg" alt="Imagen 3" loading="lazy"></a>
+                </div>
+            </div>
+
+        </section>
+
+        <hr class="linea">
+
+        <!-- SECCION MAS VISTAS ESTA SEMANA -->
+        <section class="container-fluid">
+            <div class="row">
+                <div class="col-12 py-3">
+                    <h4 id="Seccion-series">Más vistas esta semana</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-2 pb-4">
+                    <div class="bloque-proyecto">
+                        <a href="pages/movieDetail.html">
+                            <img class="imagenTendencia" src="assets/img/portadas series/a449abea-8eca-4148-acd7-e02cd4026d00.jpg" alt="">
+                            <div class="efecto-imagen">
+                                <div class="texto-imagen">Invencible 2021</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-2 pb-4">
+                    <div class="bloque-proyecto">
+                        <a href="pages/movieDetail.html">
+                            <img class="imagenTendencia"
+                                src="assets/img/portadas series/0806bf1e-cc30-4d9f-9845-95a7eae3c6de.jpg" alt="">
+                            <div class="efecto-imagen">
+                                <div class="texto-imagen">Los Anillos De Poder 2022</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-2 pb-4">
+                    <div class="bloque-proyecto">
+                        <a href="pages/movieDetail.html">
+                            <img class="imagenTendencia" src="assets/img/portadas series/3.jpg" alt="">
+                            <div class="efecto-imagen">
+                                <div class="texto-imagen">The Tick 2016</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-2 pb-4">
+                    <div class="bloque-proyecto">
+                        <a href="pages/movieDetail.html">
+                            <img class="imagenTendencia" src="assets/img/portadas series/4.jpg" alt="">
+                            <div class="efecto-imagen">
+                                <div class="texto-imagen">Moon Knight 2022</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-2 pb-4">
+                    <div class="bloque-proyecto">
+                        <a href="pages/movieDetail.html">
+                            <img class="imagenTendencia" src="assets/img/portadas series/33.jpg" alt="">
+                            <div class="efecto-imagen">
+                                <div class="texto-imagen">The Rain 2018</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-2 pb-4">
+                    <div class="bloque-proyecto">
+                        <a href="pages/movieDetail.html">
+                            <img class="imagenTendencia" src="assets/img/portadas series/6.jpg" alt="">
+                            <div class="efecto-imagen">
+                                <div class="texto-imagen">Jessica Jones 2015</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-2 pb-4">
+                    <div class="bloque-proyecto">
+                        <a href="pages/movieDetail.html">
+                            <img class="imagenTendencia" src="assets/img/portadas series/7.jpg" alt="">
+                            <div class="efecto-imagen">
+                                <div class="texto-imagen">The Boys 2019</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-2 pb-4">
+                    <div class="bloque-proyecto">
+                        <a href="pages/movieDetail.html">
+                            <img class="imagenTendencia" src="assets/img/portadas series/8.jpg" alt="">
+                            <div class="efecto-imagen">
+                                <div class="texto-imagen">Daryl Dixon 2023</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-2 pb-4">
+                    <div class="bloque-proyecto">
+                        <a href="pages/movieDetail.html">
+                            <img class="imagenTendencia" src="assets/img/portadas series/9.jpg" alt="">
+                            <div class="efecto-imagen">
+                                <div class="texto-imagen">The Walking Dead City 2023</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-2 pb-4">
+                    <div class="bloque-proyecto">
+                        <a href="pages/movieDetail.html">
+                            <img class="imagenTendencia" src="assets/img/portadas series/10.jpg" alt="">
+                            <div class="efecto-imagen">
+                                <div class="texto-imagen">The Last Of Us 2023</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-2 pb-4">
+                    <div class="bloque-proyecto">
+                        <a href="pages/movieDetail.html">
+                            <img class="imagenTendencia" src="assets/img/portadas series/36.jpg" alt="">
+                            <div class="efecto-imagen">
+                                <div class="texto-imagen">Loki 2021</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-2 pb-4">
+                    <div class="bloque-proyecto">
+                        <a href="pages/movieDetail.html">
+                            <img class="imagenTendencia" src="assets/img/portadas series/12.jpg" alt="">
+                            <div class="efecto-imagen">
+                                <div class="texto-imagen">Dark 2017</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-2 pb-4">
+                    <div class="bloque-proyecto">
+                        <a href="pages/movieDetail.html">
+                            <img class="imagenTendencia" src="assets/img/portadas series/13.jpg" alt="">
+                            <div class="efecto-imagen">
+                                <div class="texto-imagen">Mi Dulce Niña 2023</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-2 pb-4">
+                    <div class="bloque-proyecto">
+                        <a href="pages/movieDetail.html">
+                            <img class="imagenTendencia" src="assets/img/portadas series/14.jpg" alt="">
+                            <div class="efecto-imagen">
+                                <div class="texto-imagen">Gotham Knights 2023</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-2 pb-4">
+                    <div class="bloque-proyecto">
+                        <a href="pages/movieDetail.html">
+                            <img class="imagenTendencia" src="assets/img/portadas series/37.jpg" alt="">
+                            <div class="efecto-imagen">
+                                <div class="texto-imagen">Ms Marvel 2022</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-2 pb-4">
+                    <div class="bloque-proyecto">
+                        <a href="pages/movieDetail.html">
+                            <img class="imagenTendencia" src="assets/img/portadas series/16.jpg" alt="">
+                            <div class="efecto-imagen">
+                                <div class="texto-imagen">Good Omens 2019</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-2 pb-4">
+                    <div class="bloque-proyecto">
+                        <a href="pages/movieDetail.html">
+                            <img class="imagenTendencia" src="assets/img/portadas series/17.jpg" alt="">
+                            <div class="efecto-imagen">
+                                <div class="texto-imagen">Kung Fu 2023</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-2 pb-4">
+                    <div class="bloque-proyecto">
+                        <a href="pages/movieDetail.html">
+                            <img class="imagenTendencia" src="/assets/img/portadas series/18.jpg" alt="">
+                            <div class="efecto-imagen">
+                                <div class="texto-imagen">Legion 2017</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="botones-container">
+                <button class="boton">Anterior</button>
+                <button class="boton">Siguiente</button>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer container-fluid">
+        <div class="row">
+            <div class="redesFooter col-md-4 col-sm-12">
+                <ul class="d-flex justify-content-center align-items-center">
+                    <li><a href="https://www.facebook.com/"><svg xmlns="http://www.w3.org/2000/svg" width="32"
+                                height="32" viewBox="0 0 24 24">
+                                <path
+                                    d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m13 2h-2.5A3.5 3.5 0 0 0 12 8.5V11h-2v3h2v7h3v-7h3v-3h-3V9a1 1 0 0 1 1-1h2V5z"
+                                    fill="white" />
+                            </svg></a></li>
+                    <li><a href="https://www.instagram.com/"><svg xmlns="http://www.w3.org/2000/svg" width="32"
+                                height="32" viewBox="0 0 24 24">
+                                <path fill="white"
+                                    d="M12 9.52A2.48 2.48 0 1 0 14.48 12A2.48 2.48 0 0 0 12 9.52m9.93-2.45a6.53 6.53 0 0 0-.42-2.26a4 4 0 0 0-2.32-2.32a6.53 6.53 0 0 0-2.26-.42C15.64 2 15.26 2 12 2s-3.64 0-4.93.07a6.53 6.53 0 0 0-2.26.42a4 4 0 0 0-2.32 2.32a6.53 6.53 0 0 0-.42 2.26C2 8.36 2 8.74 2 12s0 3.64.07 4.93a6.86 6.86 0 0 0 .42 2.27a3.94 3.94 0 0 0 .91 1.4a3.89 3.89 0 0 0 1.41.91a6.53 6.53 0 0 0 2.26.42C8.36 22 8.74 22 12 22s3.64 0 4.93-.07a6.53 6.53 0 0 0 2.26-.42a3.89 3.89 0 0 0 1.41-.91a3.94 3.94 0 0 0 .91-1.4a6.6 6.6 0 0 0 .42-2.27C22 15.64 22 15.26 22 12s0-3.64-.07-4.93m-2.54 8a5.73 5.73 0 0 1-.39 1.8A3.86 3.86 0 0 1 16.87 19a5.73 5.73 0 0 1-1.81.35H8.94A5.73 5.73 0 0 1 7.13 19a3.51 3.51 0 0 1-1.31-.86A3.51 3.51 0 0 1 5 16.87a5.49 5.49 0 0 1-.34-1.81V8.94A5.49 5.49 0 0 1 5 7.13a3.51 3.51 0 0 1 .86-1.31A3.59 3.59 0 0 1 7.13 5a5.73 5.73 0 0 1 1.81-.35h6.12a5.73 5.73 0 0 1 1.81.35a3.51 3.51 0 0 1 1.31.86A3.51 3.51 0 0 1 19 7.13a5.73 5.73 0 0 1 .35 1.81V12c0 2.06.07 2.27.04 3.06Zm-1.6-7.44a2.38 2.38 0 0 0-1.41-1.41A4 4 0 0 0 15 6H9a4 4 0 0 0-1.38.26a2.38 2.38 0 0 0-1.41 1.36A4.27 4.27 0 0 0 6 9v6a4.27 4.27 0 0 0 .26 1.38a2.38 2.38 0 0 0 1.41 1.41a4.27 4.27 0 0 0 1.33.26h6a4 4 0 0 0 1.38-.26a2.38 2.38 0 0 0 1.41-1.41a4 4 0 0 0 .26-1.38V9a3.78 3.78 0 0 0-.26-1.38ZM12 15.82A3.81 3.81 0 0 1 8.19 12A3.82 3.82 0 1 1 12 15.82m4-6.89a.9.9 0 0 1 0-1.79a.9.9 0 0 1 0 1.79" />
+                            </svg></a></li>
+                    <li><a href="https://twitter.com/"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                viewBox="0 0 448 512">
+                                <path fill="white"
+                                    d="M64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64zm297.1 84L257.3 234.6L379.4 396h-95.6L209 298.1L123.3 396H75.8l111-126.9L69.7 116h98l67.7 89.5l78.2-89.5zm-37.8 251.6L153.4 142.9h-28.3l171.8 224.7h26.3z" />
+                            </svg></a></li>
+                </ul>
+            </div>
+
+            <div class="linksFooter col-md-8 col-sm-12">
+                <ul class="d-md-flex justify-content-center align-items-center text-center list-unstyled">
+                    <li class="linkFooter"><a class=" text-decoration-none" href="#">Términos y condiciones</a></li>
+                    <li class="linkFooter"><a class=" text-decoration-none" href="#">Preguntas frecuentes</a></li>
+                    <li class="linkFooter"><a class="text-decoration-none" href="#">Ayuda</a></li>
+                    <li class="adminButton"><a class="text-decoration-none " class="" href="./pages/administrador_movie.html">Administrador
+                            Películas</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/get_peliculas.js"></script>
+    <script src="./js/post_peliculas.js"></script>
+</body>
+
+</html>
